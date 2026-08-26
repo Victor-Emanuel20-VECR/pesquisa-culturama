@@ -120,7 +120,27 @@
                 <input type="color" name="userFavoriteColor" id="favoriteColor">
             </fieldset>
 
+            <fieldset>
+                <legend>Opinião</legend>
 
+                <p>Como você avalia sua experiência?</p>
+                <label for="satisfactionOtima">Ótima</label>
+                <input id="satisfactionOtima" type="radio" name="userSatisfaction" value="Otima" required>
+
+                <label for="satisfactionBoa">Boa</label>
+                <input id="satisfactionBoa" type="radio" name="userSatisfaction" value="Boa" required>
+
+                <label for="satisfactionRegular">Regular</label>
+                <input id="satisfactionRegular" type="radio" name="userSatisfaction" value="Regular" required>
+
+                <label for="satisfactionRuim">Ruim</label>
+                <input id="satisfactionRuim" type="radio" name="userSatisfaction" value="Ruim" required>
+                <br>
+
+                <label for="userComment">Comentário</label>
+                <br>
+                <textarea id="userComment" name="userComment" rows="4" cols="40" placeholder="Deixe aqui sua opinião, sugestão ou crítica..."></textarea>
+            </fieldset>
 
 
 
