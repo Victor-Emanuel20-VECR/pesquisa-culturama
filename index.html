@@ -15,22 +15,22 @@
                 <legend>Dados Pessoais</legend>
             
                 <label for="userName">Nome</label>
-                <input type="text" name="userName" required>
+                <input id="userName" type="text" name="userName" required>
                 <br>
                 <label for="userAge">Idade</label>
-                <input type="number" name="userAge" min="12" max="100" required>
+                <input id="userAge" type="number" name="userAge" min="12" max="100" required>
                 <br>
                 <label for="birthDate">Data De Nascimento</label>
-                <input type="date" name="birthDate">
+                <input id="birthDate" type="date" name="birthDate">
                 <br>
                 <label for="userEmail">Email</label>
-                <input type="email" name="userEmail" required>
+                <input id="userEmail" type="email" name="userEmail" required>
                 <br>
                 <label for="userPhoneNumber">Telefone</label>
-                <input type="tel" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="DDD + Numero">
+                <input id="userPhoneNumber" type="tel" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="DDD + Numero">
                 <br>
                 <label for="userImage">Upload de foto</label>
-                <input type="file" accept="image/*" name="userImage">
+                <input id="userImage" type="file" accept="image/*" name="userImage">
                 <br>
             </fieldset>
 
@@ -38,14 +38,14 @@
                 <legend>Perfil</legend>
 
                 <p>Gênero:</p>
-                <label for="userGender">Feminino</label>
-                <input type="radio" name="userGender" value="Feminino">
+                <label for="userGenderFemale">Feminino</label>
+                <input id="userGenderFemale" type="radio" name="userGender" value="Feminino">
 
-                <label for="userGender">Masculino</label>
-                <input type="radio" name="userGender" value="Masculino">
+                <label for="userGenderMale">Masculino</label>
+                <input id="userGenderMale" type="radio" name="userGender" value="Masculino">
 
-                <label for="userGender">Prefiro não informar</label>
-                <input type="radio" name="userGender" value="notInformed">
+                <label for="userGenderNotInformed">Prefiro não informar</label>
+                <input id="userGenderNotInformed" type="radio" name="userGender" value="notInformed">
                 <br>
 
                 <label for="maritalStatus">Estado civil</label>
@@ -88,7 +88,36 @@
                 </select>
 
                 <label for="userCity">Cidade</label>
-                <input type="text" name="userCity">
+                <input id="userCity" type="text" name="userCity">
+            </fieldset>
+
+            <fieldset>
+                <legend>Hábitos</legend>
+
+                <p>Redes Sociais</p>
+                <input id="socialInstagram" type="checkbox" name="social" value="instagram">
+                <label for="socialInstagram">Instagram</label>
+                <br>
+                <input id="socialFacebook" type="checkbox" name="social" value="facebook">
+                <label for="socialFacebook">Facebook</label>
+                <br>
+                <input id="socialLinkedin" type="checkbox" name="social" value="linkedin">
+                <label for="socialLinkedin">Linkedin</label>
+                <br>
+                <input id="socialTwitter" type="checkbox" name="social" value="twitter">
+                <label for="socialTwitter">Twitter</label>
+                <br>
+                <label for="musicStyle">Estilo musical:</label>
+                <input list="styleTypes" id="musicStyle" name="userMusicStyle" type="text">
+                <datalist id="styleTypes">
+                    <option value="rock">
+                    <option value="sertanejo">
+                    <option value="pop">
+                    <option value="classica">
+                </datalist>
+                <br>
+                <label for="favoriteColor">Cor favorita</label>
+                <input type="color" name="userFavoriteColor" id="favoriteColor">
             </fieldset>
 
 
